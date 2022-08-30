@@ -19,6 +19,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            padding: 10px;
         }
 
         div:hover{
@@ -29,10 +30,10 @@
 </head>
     <body>
         <div>
-            <h1>Base de preço - USD$ 5.06 (30/08/2022)</h1>
+            <h1>Base de preço - USD$ 5.09 (30/08/2022)</h1>
             <script>
                 var valor = window.prompt('Valor que deseja converter R$: ')
-                var convertido = valor / 5.06
+                var convertido = valor / 5.09
                 document.write(`${convertido.toLocaleString('pt-BR', {style:'currency', currency:'USD'})}`)
             </script>
         </div>
