@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
     <title>Detran</title>
 </head>
 <body>
-    <h1>Detran</h1>
+    <h1 style="">Detran</h1>
     <input type="number" name="txtvel" id="vel">
-    
+    <input type="button" value="Verificar" onclick="avaliar()">
     <h3>Seu estado:</h3>
-    <p id="estado">Safe</p>
+    <div id="estado">Safe</div>
     <script>
-        var vel = window.document.getElementById('vel')
-        if(vel > 50){
-            var estado = window.document.getElementById('estado')
-            estado = InnerText(Multado)
+        var senha = '000'
+        while(senha != '12345'){
+            var senha = window.prompt('Senha')
         }
+        function avaliar(){
+            var vel = window.document.getElementById("vel")
+            var estado = window.document.getElementById("estado")
+            var num = Number(vel.value)
+
+            if(num > 50){
+                estado.innerHTML = '<p style="color:red;">Multado</p>'
+            
+            }
+
+            else{
+                estado.innerHTML = '<p style=color:green;>Suave</p>'
+            }
+        }
+
     </script>
 </body>
 </html>
