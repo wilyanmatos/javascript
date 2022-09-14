@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(247, 137, 58);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 2.4em;
+        }
+
+        footer{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #container{
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: whitesmoke;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+    
+        }
+
+       #conteudo{
+           background-color: rgb(212, 5, 5);
+           height: 50px;
+           font-size: 1.9em;
+           padding-top: 10px;
+
+       } 
+
+       #color{
+           margin-top: 17px;
+           background-color: aquamarine;
+           position: absolute;
+           width: 270px;
+           height: 270px;
+           border-radius: 50%;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+       }
+        
+
+    </style>
+    <title>Projeto - Horario com imagem</title>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <main>
+        <div id="container"> 
+            <div id="conteudo">00:00</div>
+            <div id="color"></div>
+        </div>
+    </main>
+    <footer>
+        Projeto feito por mim, para o <strong>Curso em Video</strong>
+    </footer>
+
+    <script>
+        var atual = new Date()
+        var agora = 3
+        var hora = document.getElementById("conteudo")
+        hora.innerHTML = `Agora são ${agora}:00 Horas`
+        var bg = document.getElementById("color")
+        if(agora <= 6)/*Madrugada*/{
+            bg.style.background = "white"
+        }else if(agora <=12)/*Manhâ*/{
+            bg.style.background = "aquamarine"
+        }else if(agora <= 17)/*Tarde*/{
+            bg.style.background = "chocolate"
+        }else if(agora <= 23) /*Noite*/{
+            bg.style.background = "darkblue"
+        }
+    </script>
+</body>
+</html>
