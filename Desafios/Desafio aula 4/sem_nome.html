@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <title>Relogio que altera o background</title>
 </head>  
-<body id="principal">
+<body id="principal" onload="carregar()">
     <header >
         <h1>Hora do Dia</h1>
     </header>
     <section>
         <div id="time">
             {Erro: JavaScript}
+            <p id="saudacao"></p>
         </div>
         <div id="conteudo">
-            <img src="imgs/Manhã.png" alt="Manhã">
+            <img src="imgs/Manhã.png" alt="Manhã" id="img_periodo">
         </div>
     </section>
     <footer>

@@ -24,15 +24,15 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.3em;
 
 }
 
 footer > p > a{
     text-decoration: none;
-    color: white;
+    color: floralwhite;
     font-weight: bolder;
-    
+
 }
 
 #time{
