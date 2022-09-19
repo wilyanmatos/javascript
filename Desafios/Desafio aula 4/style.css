@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(86, 86, 247);
+    font: normal 15px arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+    
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2em;
+
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    
+}
+
+#time{
+    font-size: 1.8em;
+}
+
+#conteudo > img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
