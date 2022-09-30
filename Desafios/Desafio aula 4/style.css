@@ -44,4 +44,5 @@ footer > p > a{
     height: 350px;
     border-radius: 50%;
     margin-bottom: 40px;
+    background-image: linear-gradient(to bottom, #07416B, #ECA555);
 }
