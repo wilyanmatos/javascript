@@ -21,11 +21,11 @@ section{
 }
 
 footer{
+    font-style: italic;
     color: white;
     text-align: center;
     font-style: italic;
     font-size: 1.3em;
-
 }
 
 footer > p > a{

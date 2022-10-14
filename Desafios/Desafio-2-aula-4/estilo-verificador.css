@@ -10,6 +10,7 @@ body{
     background-color: rgb(116, 116, 216);
 }
 
+
 section h1{
     text-align: center;
     color: white;
@@ -38,6 +39,7 @@ section button{
     font-size: 1em;
     padding: 1px;
     font-weight: bolder;
+    border-radius: 5px;
 }
 
 section button:hover{
@@ -46,4 +48,18 @@ section button:hover{
 
 .space{
     margin:15px 0px;
+}
+
+.img_pessoa{
+    opacity: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+#div_img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    text-align: center;
 }
