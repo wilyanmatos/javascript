@@ -2,19 +2,28 @@
 function btn(){
     var nasc = window.document.getElementById("nascimento").value
     var sexo = document.querySelector("input[name='sexo']:checked").value
-    var idade = Number(2022 - nasc)
-    var div_msg = document.getElementsByClassName("div_img")
-    var img = document.getElementById("img")
-    var msg = document.getElementById("msg")
-    img.innerHTML = style="opacity:1;"
-    div_msg.innerHTML = style="opacity:1;"
-    if (idade >= 0 && idade < 6){
-        img.src = "Photos/Homens/bb_knife.jpg"
-    }else if(idade >= 6 && idade < 15){
-        img.src = "Photos/Homens/Menino.jpg"
-    }else{
-        window.alert("ERRO")
+    var date = new Date()
+    var ano = date.getFullYear()
+    var idade = Number(ano - nasc)
+    var res = window.document.getElementById("img")
+    var img = document.createElement("img")
+    img.setAttribute("id" ,"foto")
+
+    if(sexo == "homem"){
+        window.alert("O cara é homi kkkkkkkk")
+        if(idade >= 0 && idade < 5){
+            //Bebe
+            res.setAttribute('src', 'Photos/Homens/bb_knife.jpg')
+        }else if(idade >= 5 && idade < 15){
+            //menino
+            res.setAttribute('src', 'Photos/Homens/Menino.jpg')
+
+        }
     }
-    msg.innerText = `Detectamos um(a) ${sexo} de ${idade} anos`
     
+    if(sexo == "mulher"){
+        window.alert("Muie kkkkkkkkkkk")
+    }
+    
+    foto.appendChild(img)
 }

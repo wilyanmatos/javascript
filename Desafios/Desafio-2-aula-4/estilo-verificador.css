@@ -18,7 +18,7 @@ section h1{
     margin: 15px 0px;
 }
 
-section div{
+section #principal{
     margin: auto;
     width: 500px;
     background-color: white;
@@ -28,8 +28,9 @@ section div{
     
 }
 
-section label{
+section p{
     font-weight: bolder;
+    margin: 10px 0px;
 }
 
 section button{
@@ -46,20 +47,9 @@ section button:hover{
     background-color: whitesmoke;
 }
 
-.space{
-    margin:15px 0px;
-}
 
-.img_pessoa{
-    opacity: 0;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-}
 
-#div_img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    text-align: center;
+#img{
+    font-weight: 700;
+    padding: 10px;
 }

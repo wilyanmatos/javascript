@@ -11,21 +11,22 @@
 <body>
     <section>
         <h1>Verificador de Idade</h1>
-        <div>
-            <label>Ano de Nascimento: </label>
-            <input type="number" name="Ano_de_Nascimento" required class="space" id="nascimento"><br>
+        <div id="principal">
+            <p>Ano de Nascimento:
+                <input type="number" name="Ano_de_Nascimento"  class="space" id="nascimento">
+            </p>
 
+            <p>
             <label>Sexo: </label>
-
-            <input type="radio" name="sexo" value="homem">
-            <label>Homem</label>
-            <input type="radio" name="sexo" value="mulher">
-            <label>Mulher</label><br>
+                <input type="radio" name="sexo" value="homem" checked>
+                <label>Homem</label>
+                <input type="radio" name="sexo" value="mulher">
+                <label>Mulher</label><br>
+            </p>
 
             <button class="space" onclick="btn()">Verificar</button>
-            <h3 id="msg">*Preencha os dados acima para ver o resultado</h3>
-            <div id="div_img" class="img_pessoa">
-                <img src="#" class="img_pessoa" id="img" alt="img">
+            <div id="res">
+                *Preencha os dados acima para ver o resultado
             </div>
         </div>
     </section>
